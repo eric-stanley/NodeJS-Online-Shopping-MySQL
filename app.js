@@ -3,8 +3,9 @@ const bodyParser = require('body-parser');
 const favicon = require('serve-favicon');
 const path = require('path');
 
-const adminData = require('./routes/admin');
+const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
+const errorsController = require('./controllers/error');
 
 const app = express();
 
@@ -15,14 +16,9 @@ app.use(favicon(__dirname + '/favicon.ico'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/admin', adminData.routes);
+app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
-app.use((req, res, next) => {
- res.status(404).render('404', {
-  title: 'Page not found',
-  path: '/'
- });
-});
+app.use(errorsController.get404);
 
 app.listen(3000);
