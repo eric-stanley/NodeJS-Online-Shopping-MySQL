@@ -1,1 +1,14 @@
-[{"title":"book","path":"shop"},{"title":"third book","path":"shop"},{"title":"second book","path":"shop"},{"title":"fourth book","path":"shop"}]
+[
+  {
+    "title": "Speakers",
+    "imageUrl": "https://images.pexels.com/photos/1279107/pexels-photo-1279107.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "description": "This is a test description for product 1",
+    "price": "19.99"
+  },
+  {
+    "title": "Camera",
+    "imageUrl": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "description": "Test description for product 2",
+    "price": "459.89"
+  }
+]
