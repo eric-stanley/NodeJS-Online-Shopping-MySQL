@@ -13,8 +13,8 @@ router.get('/add-product', adminController.getAddProduct);
 // post request
 router.post('/add-product', adminController.postAddProduct);
 
-// /admin/product-list
+// /admin/products
 // get request
-router.get('/product-list', adminController.getProducts);
+router.get('/products', adminController.getProducts);
 
 module.exports = router;

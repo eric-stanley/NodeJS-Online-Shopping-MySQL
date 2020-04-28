@@ -8,13 +8,21 @@ const router = express.Router();
 // get request
 router.get('/', shopController.getIndex);
 
-// /product-list
+// /products
 // get request
-router.get('/product-list', shopController.getProducts);
+router.get('/products', shopController.getProducts);
+
+// /products/:id
+// get request
+router.get('/products/:productId', shopController.getProduct);
 
 // /cart
 // get request
 router.get('/cart', shopController.getCart);
+
+// /cart
+// post request
+router.post('/cart', shopController.postCart);
 
 // /checkout
 // get request

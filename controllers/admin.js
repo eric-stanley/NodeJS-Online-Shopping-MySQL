@@ -20,10 +20,10 @@ exports.postAddProduct = (req, res, next) => {
 
 exports.getProducts = (req, res, next) => {
  Product.fetchAll(products => {
-  res.render('admin/product-list', {
+  res.render('admin/products', {
    products: products,
    title: 'Admin Products',
-   path: '/admin/product-list'
+   path: '/admin/products'
   });
  });
 }

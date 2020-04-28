@@ -1,14 +1,16 @@
 [
   {
-    "title": "Speakers",
-    "imageUrl": "https://images.pexels.com/photos/1279107/pexels-photo-1279107.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    "description": "This is a test description for product 1",
-    "price": "19.99"
+    "title": "Car",
+    "imageUrl": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEwODg0Mn0",
+    "description": "This is a test description",
+    "price": "67.90",
+    "id": "0.7011590038775835"
   },
   {
-    "title": "Camera",
-    "imageUrl": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    "description": "Test description for product 2",
-    "price": "459.89"
+    "title": "Car 2",
+    "imageUrl": "https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEwODg0Mn0",
+    "description": "Test description car 2",
+    "price": "343.08",
+    "id": "0.7581276719731458"
   }
 ]
