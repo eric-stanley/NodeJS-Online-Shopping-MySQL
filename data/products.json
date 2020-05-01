@@ -1,16 +1,1 @@
-[
-  {
-    "title": "Car",
-    "imageUrl": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEwODg0Mn0",
-    "description": "This is a test description",
-    "price": "67.90",
-    "id": "0.7011590038775835"
-  },
-  {
-    "title": "Car 2",
-    "imageUrl": "https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEwODg0Mn0",
-    "description": "Test description car 2",
-    "price": "343.08",
-    "id": "0.7581276719731458"
-  }
-]
+[{"id":"0.5588585656126788","title":"Book","imageUrl":"https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEwODg0Mn0","description":"Test book","price":"12.98"},{"id":"0.7397317108309132","title":"Bike","imageUrl":"https://images.unsplash.com/photo-1533641568252-76ce0951d5b4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEwODg0Mn0","description":"Bike","price":"32.19"}]
