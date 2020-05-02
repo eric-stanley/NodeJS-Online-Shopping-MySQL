@@ -3,9 +3,10 @@ const bodyParser = require('body-parser');
 const favicon = require('serve-favicon');
 const path = require('path');
 
+const errorsController = require('./controllers/error');
+
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
-const errorsController = require('./controllers/error');
 
 const app = express();
 
