@@ -25,12 +25,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
- User.findByPk(1)
-  .then(user => {
-   req.user = user;
-   next();
-  })
-  .catch(err => console.log(err));
+  User.findByPk(1)
+    .then(user => {
+      req.user = user;
+      next();
+    })
+    .catch(err => console.log(err));
 });
 
 app.use('/admin', adminRoutes);
@@ -39,8 +39,8 @@ app.use(shopRoutes);
 app.use(errorsController.get404);
 
 Product.belongsTo(User, {
- constraints: true,
- onDelete: 'CASCADE'
+  constraints: true,
+  onDelete: 'CASCADE'
 });
 User.hasMany(Product);
 User.hasOne(Cart);
@@ -53,37 +53,37 @@ Order.belongsToMany(Product, { through: OrderItem });
 Product.belongsToMany(Order, { through: OrderItem });
 
 sequelize
- // .sync({ force: true })
- .sync()
- .then(result => {
-  User.findByPk(1)
-   .then(user => {
-    if (!user) {
-     return User.create({
-      name: 'eric',
-      email: 'eric@gmail.com'
-     });
-    }
-    return user;
-   })
-   .then(user => {
-    Cart.findOne({
-     where: {
-      userId: user.id
-     }
-    })
-     .then(cart => {
-      if (!cart) {
-       return user.createCart();
-      }
-      return cart;
-     })
-   })
-   .then(cart => {
-    app.listen(3000);
-   })
-   .catch(err => console.log(err));
- })
- .catch(err => {
-  console.log(err);
- });
+  // .sync({ force: true })
+  .sync()
+  .then(result => {
+    User.findByPk(1)
+      .then(user => {
+        if (!user) {
+          return User.create({
+            name: 'eric',
+            email: 'eric@gmail.com'
+          });
+        }
+        return user;
+      })
+      .then(user => {
+        Cart.findOne({
+          where: {
+            userId: user.id
+          }
+        })
+          .then(cart => {
+            if (!cart) {
+              return user.createCart();
+            }
+            return cart;
+          })
+      })
+      .then(cart => {
+        app.listen(3000);
+      })
+      .catch(err => console.log(err));
+  })
+  .catch(err => {
+    console.log(err);
+  });
